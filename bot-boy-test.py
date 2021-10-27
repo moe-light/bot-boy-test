@@ -9,4 +9,8 @@ bot = telebot.TeleBot(token)
 def start(msg):
   bot.reply_to(msg, 'سلام من هنوز زندم')
 
+@bot.message_handler(func=lambda m: True)
+def echo_all(message):
+	bot.reply_to(message, message.text)
+  
 bot.polling()
