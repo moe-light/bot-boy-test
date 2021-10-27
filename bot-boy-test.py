@@ -1,5 +1,6 @@
 import os
 import telebot
+from telebot import types
 
 token = os.environ['API_Token']
 
