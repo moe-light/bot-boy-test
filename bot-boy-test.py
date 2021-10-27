@@ -8,7 +8,6 @@ bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def start(msg):
-  bot.reply_to(msg, 'سلام من هنوز زندم')
   markup = types.ReplyKeyboardMarkup(row_width=2)
   itembtn1 = types.KeyboardButton('salam')
   itembtn2 = types.KeyboardButton('oodafez')
