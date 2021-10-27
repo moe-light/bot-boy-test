@@ -6,7 +6,7 @@ token = os.environ['API_Token']
 
 bot = telebot.TeleBot(token)
 
-bot.infinity_polling(interval=0, timeout=1)
+
 
 markup = types.ReplyKeyboardMarkup()
 itembtna = types.KeyboardButton('a')
@@ -26,4 +26,4 @@ def start(msg):
 def echo_all(message):
 	bot.reply_to(message, message.text)
 
-
+bot.infinity_polling(interval=0, timeout=1)
